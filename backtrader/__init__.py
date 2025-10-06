@@ -18,8 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 from .version import __version__, __btversion__
 
@@ -88,3 +87,8 @@ from . import talib as talib
 # Load contributed indicators and studies
 import backtrader.indicators.contrib
 import backtrader.studies.contrib
+
+# load internally developed modules
+from . import analyzer_store as analyzer_store
+from . import strategy_store as strategy_store
+from . import feeds_store as feeds_store
